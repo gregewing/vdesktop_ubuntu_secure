@@ -7,7 +7,7 @@ COPY scripts /usr/local/bin
 ###  Set local repository  ###
 RUN echo Starting.\
 # && cp /etc/apt/sources.list /etc/apt/sources.list.default \
- && mv /usr/local/bin/sources.list.localrepo /etc/apt/sources.list \
+# && mv /usr/local/bin/sources.list.localrepo /etc/apt/sources.list \
  && apt-get -q -y update \
  && apt-get -q -y install \ 
 #                         sudo \
